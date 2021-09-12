@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+}
+
+#btn-registrar {
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: absolute;
+    background-color: green;
+    border-radius: 12px;
+    left: 38%;
+    top: 50%;
+}
+
+#enlace-registro {
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+
+}
+
+#navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    height: 50%;
+    background-color: #74b72e;
+}
+
+#enlace-navigation {
+    margin: 2%;
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+
+/*Crear la burbuja*/
+#burbuja {
+    width: 7%;
+    height: 10%;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+    position: absolute;
+    bottom: -0;
+    animation: burbujas 3s linear infinite;
+}
+
+#burbuja:nth-child(1) {
+    width: 7%;
+    height: 10%;
+    left: 8%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+#burbuja:nth-child(2) {
+    width: 9%;
+    height: 13%;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+#burbuja:nth-child(3) {
+    width: 10%;
+    height: 14%;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+#burbuja:nth-child(4) {
+    width: 9%;
+    height: 13%;
+    left: 45%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+#burbuja:nth-child(5) {
+    width: 11%;
+    height: 15%;
+    left: 55%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+#burbuja:nth-child(6) {
+    width: 10%;
+    height: 14%;
+    left: 75%;
+    animation-duration: 3s;
+    animation-delay: 9s;
+}
+
+#burbuja:nth-child(7) {
+    width: 9%;
+    height: 13%;
+    left: 85%;
+    animation-duration: 3s;
+    animation-delay: 8s;
+}
+
+footer {
+    display: flex;
+    background-color: #74b72e;
+    height: 50%;
+    padding: 1%;
+    justify-content: center;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 700px) {
+    #btn-registrar {
+        padding: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        position: absolute;
+        background-color: green;
+        border-radius: 12px;
+        left: 44%;
+        top: 54%;
+    }
+}
